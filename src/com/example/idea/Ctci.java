@@ -146,14 +146,7 @@ public class Ctci {
     // 1.6 - Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method
     // to rotate the image by 90 degrees. Can you do this in place?
     public void rotate(int[][] matrix, int n) {
-        for (int i = 0; i < n ; i++){
-            for (int j = 0; j < n ; j++){
-                int temp = matrix[j][i] ;
-                matrix[j][i] = matrix[i][j];
-                matrix[i][j] = temp;
-             }
-
-        }
+        //
     }
 
     public Node getSubLinkedList(Node list, int index){
