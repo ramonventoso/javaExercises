@@ -1,17 +1,24 @@
 package com.example.idea;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
 
+
+
+
+        // ***********************************************************************************************************************
+        //  ************************************************** Leet Code *********************************************************
+        // ***********************************************************************************************************************
+        //  **********************************************************************************************************************
+        // Leet Code
+
+        LeetCode exerciseLC = new LeetCode();
         // PROBLEM 1 LC
         System.out.println("\n\nPROBLEM 1 LC");
-        int res[] = getIndices(new int[]{3,3}, 6);
+        int res[] = exerciseLC.getIndices(new int[]{3,3}, 6);
         System.out.printf("indices for target %d are [%d,%d]", 9, res[0], res[1]);
 
 
@@ -25,7 +32,7 @@ public class Main {
             nod = nod.next;
         }
 
-        ListNode suma = addTwoNumbers(lnode, lnode2);
+        ListNode suma = exerciseLC.addTwoNumbers(lnode, lnode2);
         ListNode n = suma;
         while (n != null){
             System.out.printf("%d", n.val);
@@ -35,36 +42,41 @@ public class Main {
 
         // PROBLEM 3 LC
         System.out.println("\n\nPROBLEM 3 LC");
-        System.out.printf("Longest substring for %s is %d\n" , "abababcdab", lengthOfLongestSubstring("abababcdab"));
-        System.out.printf("Longest substring for %s is %d\n" , "abcdeabcdef", lengthOfLongestSubstring("abcdeabcdef"));
-        System.out.printf("Longest substring for %s is %d\n" , "bbbb", lengthOfLongestSubstring("bbbb"));
-        System.out.printf("Longest substring for %s is %d\n" , "abcd", lengthOfLongestSubstring("abcd"));
-        System.out.printf("Longest substring for %s is %d\n" , "abcabcbb", lengthOfLongestSubstring("abcabcbb"));
-        System.out.printf("Longest substring for %s is %d\n" , "pwwkew", lengthOfLongestSubstring("pwwkew"));
+        System.out.printf("Longest substring for %s is %d\n" , "abababcdab", exerciseLC.lengthOfLongestSubstring("abababcdab"));
+        System.out.printf("Longest substring for %s is %d\n" , "abcdeabcdef", exerciseLC.lengthOfLongestSubstring("abcdeabcdef"));
+        System.out.printf("Longest substring for %s is %d\n" , "bbbb", exerciseLC.lengthOfLongestSubstring("bbbb"));
+        System.out.printf("Longest substring for %s is %d\n" , "abcd", exerciseLC.lengthOfLongestSubstring("abcd"));
+        System.out.printf("Longest substring for %s is %d\n" , "abcabcbb", exerciseLC.lengthOfLongestSubstring("abcabcbb"));
+        System.out.printf("Longest substring for %s is %d\n" , "pwwkew", exerciseLC.lengthOfLongestSubstring("pwwkew"));
 
 
         // PROBLEM Reverse LC
         System.out.println("\nPROBLEM Reverse LC");
-        System.out.printf("number %d reverse %d\n" , -1234, reverse(-1234));
+        System.out.printf("number %d reverse %d\n" , -1234, exerciseLC.reverse(-1234));
 
 
         // PROBLEM 136 LC
         System.out.println("\nPROBLEM 136 LC");
         HashMap<Integer, String> map = new HashMap();
-        String res1 = encode1("https://leetcode.com/problems/design-tinyurl", map);
+        String res1 = exerciseLC.encode1("https://leetcode.com/problems/design-tinyurl", map);
         System.out.printf("encoded " + res1);
 
-        String res2 = decode1(res1, map);
+        String res2 = exerciseLC.decode1(res1, map);
         System.out.printf("\ndecoded " + res2);
 
         // PROBLEM 535 LC
         System.out.println("\n\nPROBLEM 535 LC");
-        System.out.printf("hashmap exercise single number is %d\n" , singleNumber2(new int[] {1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5}));
+        System.out.printf("hashmap exercise single number is %d\n" , exerciseLC.singleNumber2(new int[] {1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5}));
 
 
 
 
 
+
+
+
+        // ***********************************************************************************************************************
+        //  *********************************************  cracking the code interview  ******************************************
         // ***********************************************************************************************************************
         //  **********************************************************************************************************************
         // cracking the code interview
@@ -72,8 +84,8 @@ public class Main {
 
         Ctci exercise = new Ctci();
 
-        // 1 - Arrays n Strings   *****************************************************************************************
-        System.out.println("\n\n******************Exercises from book CTCI Chapter: Arrays and Strings");
+        // 1 - Arrays n Strings   -----------------------------------------------------------------------------------------------
+        System.out.println("\n\n---------------  Exercises from book CTCI Chapter: Arrays and Strings");
 
         // 1.1
         // Implement an algorithm to determine if a string has all unique characters.
@@ -136,13 +148,183 @@ public class Main {
 
         // 1.6 - Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method
         // to rotate the image by 90 degrees. Can you do this in place?
-        // public static void rotate(int[][] matrix, int n) {
+
+        System.out.println("\n\nEx 1.6 - Rotate a matrix ");
+
+        // odd rows
+        int[][] m = new int[5][5];
+        // fill m
+        int count = 1;
+        for (int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+                m[i][j] = count++;
+            }
+        }
+        // print initial m
+        System.out.println("Initial Rows Odd");
+        for (int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+                System.out.printf(m[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // print final m
+        System.out.println("Rotated");
+        int[][] fm = exercise.rotate(m, 5);
+        for (int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+                System.out.printf(fm[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // no rows
+        int[][] m1 = new int[0][0];
+        int[][] fm1 = exercise.rotate(m1, 5);
+        // print final m
+        System.out.println("Rotated Empty");
+        for (int i = 0; i < fm1.length; i++){
+            for (int j = 0; j < fm1.length; j++){
+                System.out.printf(fm1[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // 1 row
+        int[][] m2 = new int[1][1];
+        // fill m
+        int count2 = 1;
+        for (int i = 0; i < m2.length; i++){
+            for (int j = 0; j < m2.length; j++){
+                m2[i][j] = count2++;
+            }
+        }
+        // print initial m
+        System.out.println("Initial 1 row");
+        for (int i = 0; i < m2.length; i++){
+            for (int j = 0; j < m2.length; j++){
+                System.out.printf(m2[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // print final m
+        System.out.println("Rotated");
+        int[][] fm2 = exercise.rotate(m2, 1);
+        for (int i = 0; i < fm2.length; i++){
+            for (int j = 0; j < fm2.length; j++){
+                System.out.printf(fm2[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // 2 rows
+        int[][] m3 = new int[2][2];
+        // fill m
+        int count3 = 1;
+        for (int i = 0; i < m3.length; i++){
+            for (int j = 0; j < m3.length; j++){
+                m3[i][j] = count3++;
+            }
+        }
+        // print initial m
+        System.out.println("Initial 2 rows");
+        for (int i = 0; i < m3.length; i++){
+            for (int j = 0; j < m3.length; j++){
+                System.out.printf(m3[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // print final m
+        System.out.println("Rotated");
+        int[][] fm3 = exercise.rotate(m3, 5);
+        for (int i = 0; i < fm3.length; i++){
+            for (int j = 0; j < fm3.length; j++){
+                System.out.printf(fm3[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // even rows
+        int[][] m4 = new int[6][6];
+        // fill m
+        int count4 = 1;
+        for (int i = 0; i < m4.length; i++){
+            for (int j = 0; j < m4.length; j++){
+                m4[i][j] = count4++;
+            }
+        }
+        // print initial m
+        System.out.println("Initial even rows");
+        for (int i = 0; i < m4.length; i++){
+            for (int j = 0; j < m4.length; j++){
+                System.out.printf(m4[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // print final m
+        System.out.println("Rotated");
+        int[][] fm4 = exercise.rotate(m4, 5);
+        for (int i = 0; i < fm4.length; i++){
+            for (int j = 0; j < fm4.length; j++){
+                System.out.printf(fm4[i][j] + " ");
+            }
+            System.out.printf("\n");
+        }
+        // rows != cols
+        int[][] m5 = new int[4][6];
+        System.out.println("rows != cols");
+        int[][] fm5 = exercise.rotate(m5, 10);
+        if (fm5 == null) System.out.println("null");
+           else System.out.println("Not null");
 
 
-        // 2 - Linked Lists   *************************************************************************************************
-        System.out.println("\n\n ****************Exercises from book CTCI Chapter: Linked Lists");
+
+
+        // Ex 1.7 - Write an algorithm such that if an element in an MxN matrix is 0,
+        // its entire row and column is set to 0.
+
+        int[][] m7 = new int[5][5];
+        // fill m
+        int count7 = 1;
+        for (int i = 0; i < 5; i++){
+            for (int j = 0; j < 5; j++){
+                m7[i][j] = count7++;
+            }
+        }
+
+        m7[2][3] = 0;
+        System.out.println("Ex 1.7 ");
+        int[][] res7 = exercise.setZeros(m7);
+        for (int i = 0; i < res7.length; i++){
+            for (int j = 0; j < res7[0].length; j++){
+                System.out.printf(res7[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        //Ex 1.8 - Assume you have a method isSubstring which checks if one word is a substring of another.
+        // Given two strings, s1 and s2, write code to check if s2 is a rotation of s1 using only one call to isSubstring
+        // (i.e., “waterbottle” is a rotation of “erbottlewat”).
+        System.out.println("Ex 1.8 - Write code to check if s2 is a rotation of s1");
+
+        System.out.println("Is pleap a rotation of apple ? : " + exercise.isRotation( "apple", "pleap"));
+        System.out.println("Is erbottlewat a rotation of waterbottle ? : " + exercise.isRotation( "waterbottle", "erbottlewat"));
+        System.out.println("Is trbottlewat a rotation of waterbottle ? : " + exercise.isRotation( "waterbottle", "trbottlewat"));
+        System.out.println("Is a a rotation of a ? : " + exercise.isRotation( "a", "a"));
+        System.out.println("Is ab a rotation of ba ? : " + exercise.isRotation( "ba", "ab"));
+        System.out.println("Is ab a rotation of ab ? : " + exercise.isRotation( "ab", "ab"));
+        System.out.println("Is  a rotation of  ? : " + exercise.isRotation( "", ""));
+        System.out.println("Is pepe a rotation of pepep ? : " + exercise.isRotation("pepep", "pepe"));
+
+
+        //
+        // 2 - Linked Lists  -------------------------------------------------------------------------------------------
+
+        System.out.println("\n\n --------------------------------------------------------------");
+        System.out.println(" --------------------------------------------------------------");
+        System.out.println(" ---------------- Exercises from book CTCI Chapter: Linked Lists");
+        System.out.println(" --------------------------------------------------------------");
+        System.out.println(" --------------------------------------------------------------");
+
+
         // 2.1
-        // System.out.println("Ex 2.1");
+        System.out.println("Ex 2.1 - Write code to remove duplicates from an unsorted linked list.");
 
 
 
@@ -192,10 +374,30 @@ public class Main {
             node = node.next;
         }
 
+        // 2.4 - Add two numbers (coming as linked lists) and returns the sum as a linked list.
+
+        System.out.println("\n\nPROBLEM 2.4 ");
+        ListNode lnode24 = new ListNode(9);
+        ListNode lnode242 = new ListNode(1);
+        ListNode nod24 = lnode242;
+        for (int i = 0; i < 9; i++){
+            nod24.next = new ListNode( 9 );
+            nod24 = nod24.next;
+        }
+
+        ListNode suma24 = exercise.addTwoNumbers24(lnode, lnode2);
+        ListNode n24 = suma;
+        while (n24 != null){
+            System.out.printf("%d", n24.val);
+            n24 = n24.next;
+        }
+
+
+
 
 
         // test
-        System.out.println("\nTesting str[3] = 0; ");
+        System.out.println("\n\n\nTesting str[3] = 0; ");
         char[] str = "people".toCharArray();
         System.out.printf("initial size = %d", str.length);
         str[3] = 0;
@@ -218,11 +420,15 @@ public class Main {
 
 
 
+        // ************************************************************************************************************
+        // ************************************************************************************************************
+        //  ******************************************OTHER STUFF NOT COMPLETED ***************************************
+        // ************************************************************************************************************
+        //  ***********************************************************************************************************
 
 
 
-
-        // ***************************************************************************************************
+        // -------------------------------------------------------------------------------------------------------------
 
         //boolean[] pisos = new boolean[] {
                 //false, false, false, false, false,
@@ -248,181 +454,6 @@ public class Main {
 
 
 
-    // PROBLEM 1 LC My solution ACCEPTED
-    public static int[] getIndices(int[] nums, int target)
-    {
-        int[] res = new int[]{ -1, -1};
-        for (int i =0; i < nums.length; i++) {
-            for (int j = i + 1; j < nums.length; j++) {
-                if (nums[j] == target - nums[i]) {
-                    res[0] = i;
-                    res[1] = j;
-                    break;
-                }
-            }
-        }
-
-        return res;
-    }
-
-
-    // PROBLEM 2 LC Passes some test cases but not with big numbers. I am adding integers.
-    public static ListNode addTwoNumbersBF(ListNode l1, ListNode l2) {
-
-        int n1 = getNumber(l1);
-        int n2 = getNumber(l2);
-        int total = n1 + n2;
-
-        ListNode res = new ListNode(total % 10);
-        ListNode node = res;
-        while (total != 0){
-            total = total / 10;
-            if (total > 0) {
-                node.next = new ListNode(total % 10);
-                node = node.next;
-            }
-        }
-
-        return res;
-    }
-
-    public static int getNumber(ListNode ln){
-        int res = 0;
-        int i = 0;
-        ListNode node = ln;
-        while (node != null)
-        {
-            res += node.val * java.lang.Math.pow(10, i) ;
-            i++;
-            node = node.next;
-        }
-        return res;
-    }
-
-    // PROBLEM 2 LC ACCEPTED
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode res = new ListNode(0);
-        ListNode head = res;
-        int carry = 0;
-        while (l1 != null || l2 != null || carry != 0) {
-
-            // create sum node
-            ListNode tailNode = new ListNode(0);
-            int sum = ((l2 == null) ? 0 : l2.val) + ((l1 == null) ? 0 : l1.val) + carry;
-            tailNode.val = sum % 10;
-            carry = sum / 10;
-
-            // assign it as tail of final res
-            res.next = tailNode;
-            // final list points to curr
-            res = tailNode;
-
-            l1 = (l1 == null) ? l1 : l1.next;
-            l2 = (l2 == null) ? l2 : l2.next;
-        }
-        return head.next;  // first node excluded
-    }
-
-    // PROBLEM 3 LC  ->  my solution unaccepted. it works but timeout with last testcase
-    public static int lengthOfLongestSubstringSlow(String s) {
-        String maxSubStr = "";
-        for (int i = 0; i < s.length(); i++ )
-        {
-            String maxLocalSubStr = String.valueOf(s.charAt(i));
-            for (int j = i + 1; j < s.length(); j++)
-            {
-                if ( maxLocalSubStr.indexOf(s.charAt(j)) >= 0) break;
-                maxLocalSubStr += String.valueOf(s.charAt(j));
-            }
-            if (maxLocalSubStr.length() > maxSubStr.length()) maxSubStr = maxLocalSubStr;
-        }
-        return maxSubStr.length();
-    }
-
-    // PROBLEM 3 LC  ->  cheated solution
-    public static int lengthOfLongestSubstring(String s) {
-        if (s.length()==0) return 0;
-        HashMap<Character, Integer> map = new HashMap<>();
-        int max=0;
-        for (int i=0, j=0; i<s.length(); ++i){
-            if (map.containsKey(s.charAt(i))){
-                j = Math.max(j,map.get(s.charAt(i))+1);
-            }
-            map.put(s.charAt(i),i);
-            max = Math.max(max,i-j+1);
-        }
-        return max;
-    }
-
-    public static int reverse(int x) {
-        int res = 0;
-        boolean neg = false;
-        if (x < 0)  {
-            neg = true;
-        }
-        char[] chars = ("" + Math.abs(x)).toCharArray();
-        // if (chars[0] == '-') chars.
-        int lastIndex = chars.length - 1;
-        for (int i = 0; i < lastIndex - i; i++) {
-            char l = chars[i];
-            char r = chars[lastIndex - i];
-            chars[i]= r;
-            chars[lastIndex - i]= l;
-
-        }
-
-        try {
-            res = Integer.parseInt(new String(chars));
-        }
-        catch (NumberFormatException e) {
-            return 0;
-        }
-
-        return neg ? -res : res;
-    }
-
-
-
-    // PROBLEM 136 LC
-    public static int singleNumber(int[] nums) {
-        HashMap<Integer, Integer> singles = new HashMap<>();
-        for (int i = 0; i < nums.length ; i++) {
-            if (!singles.containsKey(nums[i])) {
-                singles.put(nums[i],i);
-            }
-            else {
-                singles.remove(nums[i]);
-            }
-        }
-        Object[] resArray = singles.values().toArray();
-        int targetIndex = (Integer)resArray[0];
-        return nums[targetIndex];
-
-    }
-
-    public static int singleNumber2(int[] nums) {
-        int result = 0;
-        for (int i = 0; i<nums.length; i++)
-        {
-            result ^=nums[i];
-        }
-        return result;
-
-    }
-
-    // PROBLEM 535 LC  ACCEPTED
-
-    // Encodes a URL to a shortened URL.
-    public static String encode1(String longUrl, HashMap<Integer, String> map) {
-        int code = longUrl.hashCode();
-        map.put(code, longUrl );
-        return "http://tinyurl.com/" + code;
-    }
-
-    // Decodes a shortened URL to its original URL.
-    public static String decode1(String shortUrl, HashMap<Integer, String> map) {
-        return map.get(Integer.parseInt(shortUrl.replaceAll("http://tinyurl.com/","")));
-    }
 
 
 
@@ -439,20 +470,6 @@ public class Main {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // **************OTHER STUFF NOT COMPLETED  ***********************************************************************
 
     public static LinkedList<Integer> CreateLinkedList() {
         List<Integer> numbersList = new LinkedList<>();
