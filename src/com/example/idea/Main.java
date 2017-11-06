@@ -374,7 +374,9 @@ public class Main {
             node = node.next;
         }
 
-        // 2.4 - Add two numbers (coming as linked lists) and returns the sum as a linked list.
+        /**
+         *     2.4 - Add two numbers (coming as linked lists) and returns the sum as a linked list.
+         */
 
         System.out.println("\n\nPROBLEM 2.4 ");
         ListNode lnode24 = new ListNode(9);
@@ -393,10 +395,10 @@ public class Main {
         }
 
 
+        /**
+         *      test
+         */
 
-
-
-        // test
         System.out.println("\n\n\nTesting str[3] = 0; ");
         char[] str = "people".toCharArray();
         System.out.printf("initial size = %d", str.length);
@@ -415,8 +417,50 @@ public class Main {
         System.out.println(integers[4]);
 
 
+        // ************************************************************************************************************
+        // ************************************************************************************************************
+        //  ******************************************      ALgorythm           ***************************************
+        // ************************************************************************************************************
+        //  ***********************************************************************************************************
 
 
+        Algo exerciseAL = new Algo();
+
+        ArrayList<Integer> numberList = new ArrayList<>();
+        numberList.add(4);
+        numberList.add(7);
+        numberList.add(8);
+        numberList.add(2);
+        numberList.add(6);
+        numberList.add(5);
+        numberList.add(1);
+        numberList.add(9);
+        numberList.add(3);
+
+        System.out.println("\n\nQUICK SORT ALGORYTHM - NON REPEATED NUMS - TEST\n");
+        ArrayList<Integer> sortedNumberList = exerciseAL.QuickSort(numberList);
+        for (Integer number : sortedNumberList){
+            System.out.printf(number + " ");
+        }
+
+        // QuickSortRepeated
+        ArrayList<Integer> numberList1 = new ArrayList<>();
+        numberList1.add(4);
+        numberList1.add(7);
+        numberList1.add(8);
+        numberList1.add(2);
+        numberList1.add(6);
+        numberList1.add(6);
+        numberList1.add(5);
+        numberList1.add(1);
+        numberList1.add(9);
+        numberList1.add(3);
+
+        System.out.println("\n\nQUICK SORT ALGORYTHM - REPEATED NUMS - TEST\n");
+        ArrayList<Integer> sortedNumberList1 = exerciseAL.QuickSortRepeated(numberList1);
+        for (Integer number : sortedNumberList1){
+            System.out.printf(number + " ");
+        }
 
 
 
@@ -430,20 +474,22 @@ public class Main {
 
         // -------------------------------------------------------------------------------------------------------------
 
-        //boolean[] pisos = new boolean[] {
-                //false, false, false, false, false,
-                //false, false, false, false, false,
-                //false, false, false, false, false,
-                //false, false, false, false, false,
-                //false, false, false, false, false,
-                //false, false, false, false, false,
-                //false, false};
 
-                //true, true, true, true, true,
-                //false, false, false, false, false,
-                //true, true};
-        // System.out.printf("Highest safe floor for the egg is %d", getBHighestFloor(pisos));
+        /*
+        boolean[] pisos = new boolean[] {
+                false, false, false, false, false,
+                false, false, false, false, false,
+                false, false, false, false, false,
+                false, false, false, false, false,
+                false, false, false, false, false,
+                false, false, false, false, false,
+                false, false};
 
+                true, true, true, true, true,
+                false, false, false, false, false,
+                true, true};
+         System.out.printf("Highest safe floor for the egg is %d", getBHighestFloor(pisos));
+         */
 
     }
 
