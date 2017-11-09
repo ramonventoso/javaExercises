@@ -1,6 +1,8 @@
 package com.example.idea;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 
 /**
  * Created by rventoso on 23/10/2017.
@@ -379,5 +381,65 @@ public class Ctci {
             l2 = (l2 == null) ? l2 : l2.next;
         }
         return head;
+    }
+
+    public ArrayList<Integer> commonElements(int[] a1, int[] a2){
+        int[] s, l;
+        ArrayList<Integer> res = new ArrayList<>();
+        if (a1.length > a2.length) {
+            s = a2; l = a1;
+        }
+        else {
+            s = a1; l = a2;
+        }
+
+        for( int i = 0; i < s.length; i++){
+            // binary search l for s[i]
+            if (binarySearch(s[i], l)) {
+                res.add(s[i]);
+            }
+        }
+        return res;
+    }
+
+    public boolean binarySearch(int target, int[] nums) {
+        // see if target appears in nums
+
+        // we think of floorIndex and ceilingIndex as "walls" around
+        // the possible positions of our target, so by -1 below we mean
+        // to start our wall "to the left" of the 0th index
+        // (we *don't* mean "the last index")
+        int floorIndex = -1;
+        int ceilingIndex = nums.length;
+
+        // if there isn't at least 1 index between floor and ceiling,
+        // we've run out of guesses and the number must not be present
+        while (floorIndex + 1 < ceilingIndex) {
+
+            // find the index ~halfway between the floor and ceiling
+            // we use integer division, so we'll never get a "half index"
+            int distance = ceilingIndex - floorIndex;
+            int halfDistance = distance / 2;
+            int guessIndex = floorIndex + halfDistance;
+
+            int guessValue = nums[guessIndex];
+
+            if (guessValue == target) {
+                return true;
+            }
+
+            if (guessValue > target) {
+
+                // target is to the left, so move ceiling to the left
+                ceilingIndex = guessIndex;
+
+            } else {
+
+                // target is to the right, so move floor to the right
+                floorIndex = guessIndex;
+            }
+        }
+
+        return false;
     }
 }
