@@ -183,7 +183,70 @@ public class LeetCode {
         return map.get(Integer.parseInt(shortUrl.replaceAll("http://tinyurl.com/","")));
     }
 
+    // PROBLEM 535 LC  ACCEPTED   roman to int
+    public int romanToInt(String roman) {
+        HashMap<Character, Integer> romans = new HashMap<>();
 
+        int c;
+        int n;
+        int result = 0;
+
+        romans.put('I', 1);
+        romans.put('V', 5);
+        romans.put('X', 10);
+        romans.put('L', 50);
+        romans.put('C', 100);
+        romans.put('D', 500);
+        romans.put('M', 1000);
+
+        int i = 0;
+        while(i < roman.length() -1) {
+            c = romans.get(roman.charAt(i));
+            n = romans.get(roman.charAt(i + 1));
+            if (c < n) {
+                result += n - c;
+                i = i + 2;
+            }
+            else {
+                result += c;
+                i++;
+            }
+        }
+        if (i == roman.length() - 1) {
+            result += romans.get(roman.charAt(i));
+        }
+        return result;
+    }
+
+    public int romanToInt2(String roman) {
+        HashMap<Character, Integer> romans = new HashMap<>();
+
+        int c;
+        int n;
+        int result = 0;
+
+        romans.put('I', 1);
+        romans.put('V', 5);
+        romans.put('X', 10);
+        romans.put('L', 50);
+        romans.put('C', 100);
+        romans.put('D', 500);
+        romans.put('M', 1000);
+
+        for (int i = 0; i < roman.length() -1; i++) {
+            c = romans.get(roman.charAt(i));
+            n = romans.get(roman.charAt(i + 1));
+            if (c < n) {
+                result -= c;
+            }
+            else {
+                result += c;
+            }
+        }
+        result += romans.get(roman.charAt(roman.length() -1));
+
+        return result;
+    }
 
 
 

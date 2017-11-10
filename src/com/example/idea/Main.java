@@ -66,9 +66,13 @@ public class Main {
 
         // PROBLEM 535 LC
         System.out.println("\n\nPROBLEM 535 LC");
-        System.out.printf("hashmap exercise single number is %d\n" , exerciseLC.singleNumber2(new int[] {1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5}));
+        System.out.printf("hashmap exercise single number is %d\n\n" , exerciseLC.singleNumber2(new int[] {1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5}));
 
+        // PROBLEM
 
+        String roman = "MCMLXV";
+        System.out.println("CHANGE ROMAN NUMBER TO ARABIC");
+        System.out.printf("%s in arabic system is %d\n\n", roman, exerciseLC.romanToInt2(roman));
 
 
 
