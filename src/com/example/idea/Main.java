@@ -81,6 +81,13 @@ public class Main {
         String candidate = "comabacc";
         System.out.printf("\nlongest palindrome of %s is %s\n", candidate, exerciseLC.longestPalindrome2(candidate));
 
+
+        // Is Palindrome number
+
+        int num = 1233216;
+        boolean res444 = exerciseLC.IsPalindromeNumber(num);
+        System.out.printf("%d is palindrome? %b" , num, res444);
+
         Scanner scan = new Scanner(System.in);
         String x = scan.nextLine();
 

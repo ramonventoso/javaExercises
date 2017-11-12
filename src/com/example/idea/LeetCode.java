@@ -349,4 +349,28 @@ public class LeetCode {
         return currMaxPal.length() > iniMaxPal.length() ? currMaxPal : iniMaxPal;
     }
 
+    /**
+     * palindrome number no extra space
+     *
+     */
+    public boolean IsPalindromeNumber(Integer number){
+        if (number < 0) return false;
+
+        // find number of digits
+        int digits = 1;
+        int n = 1;
+        while (number >= n) {
+            n = (int)Math.pow(10, digits);
+            digits++;
+        }
+        digits--;
+        // check palindrome condition
+        for (int i = 0; i < digits/ 2; i++){
+            int left = number / (int)Math.pow(10, digits - 2 * i - 1);
+            int right = number % 10;
+            if (left != right) return false;
+            number = (number % (int)Math.pow(10, digits - 2 * i - 1)) / 10;
+        }
+        return true;
+    }
 }
