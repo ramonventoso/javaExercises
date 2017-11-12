@@ -75,8 +75,14 @@ public class Main {
         System.out.printf("%s in arabic system is %d\n\n", roman, exerciseLC.romanToInt2(roman));
 
 
+        // LC
 
+        // String candidate = "abaaabcd";
+        String candidate = "comabacc";
+        System.out.printf("\nlongest palindrome of %s is %s\n", candidate, exerciseLC.longestPalindrome2(candidate));
 
+        Scanner scan = new Scanner(System.in);
+        String x = scan.nextLine();
 
 
         // ***********************************************************************************************************************

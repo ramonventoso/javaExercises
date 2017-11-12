@@ -249,17 +249,104 @@ public class LeetCode {
     }
 
 
+    /**
+     * works but times out
+     * @param s
+     * @return
+     */
+    public String longestPalindrome(String s){
+        String maxPal =  String.valueOf(s.charAt(0));
+        int maxPalLen = 1;
+
+        for (int head = 0; head < s.length(); head++){
+            int tail = s.length() - 1;
+            while (tail - head >= maxPalLen) {
+                String subStr = s.substring(head, tail + 1);
+                if (IsPalindrome(subStr)) {
+
+                    if (subStr.length() >= s.length() - 1 - head) {
+                        return subStr;   // there cannot be longer palindrome
+                    }
+                    if (subStr.length() > maxPalLen){
+                        maxPal = subStr;
+                        maxPalLen = maxPal.length();
+                        break;    // advance traversing head. no more longer palindrome with this head
+                    }
+                }
+                else {
+                    tail--;
+                }
+            }
+        }
+        return maxPal;
+    }
 
 
+    public boolean IsPalindrome(String s){
+        for (int i = 0; i < s.length() /2 ; i++){
+            if (s.charAt(i) != s.charAt(s.length() - 1 - i)) return false;
+        }
+        return true;
+    }
 
 
+    /**
+     * works - ACCEPTED
+     * @param s
+     * @return
+     */
+    public String longestPalindrome2(String s){
+        if (s == null) return "";
+        int lo = 0;
+        int maxLen = 0;
 
+        String iniMaxPal = String.valueOf(s.charAt(0));
 
+        // b, bb, bcb
+        if (s.length() < 4 ){
+            if (s.charAt(0) == s.charAt(s.length() - 1)) return s;
+        }
 
+        // search for 2 chars palindorme
+        for (int i = 0; i < s.length() - 1; i++){  // last bucket not touched
+            if (s.charAt(i) == s.charAt(i + 1)) { // two contiguous
+                int offset = 0;
+                int newLen = 0;
+                while ( i - offset >= 0 && i + 1 + offset < s.length()) {
+                    if (s.charAt(i - offset) != s.charAt(i + 1 + offset)) {
+                        break;
+                    }
+                    newLen = i + 1 + offset -(i - offset - 1);
+                    offset++;
+                }
 
+                if (newLen > maxLen){
+                    lo = i - offset + 1;
+                    maxLen = newLen;
+                }
+            }
+        }
+        // search for 3 chars palindrome
+        for (int i = 0; i < s.length() - 2; i++){  // last 2  bucket not touched
+            if (s.charAt(i) == s.charAt(i + 2)) { // 3 chars palindrome
+                int offset = 0;
+                int newLen = 0;
+                while (i - offset >= 0 && i + 2 + offset < s.length()) {
+                    if (s.charAt(i - offset) != s.charAt(i + 2 + offset)) {
+                        break;
+                    }
+                    newLen = i + 2 + offset -(i - offset - 1);
+                    offset++;
+                }
 
-
-
-
+                if (newLen > maxLen){
+                    lo = i - offset + 1;
+                    maxLen = newLen;
+                }
+            }
+        }
+        String currMaxPal = s.substring(lo, lo + maxLen);
+        return currMaxPal.length() > iniMaxPal.length() ? currMaxPal : iniMaxPal;
+    }
 
 }
