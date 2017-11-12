@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f35d751b-a148-49f0-973c-09e93fcaca6e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/idea/LeetCode.java" afterPath="$PROJECT_DIR$/src/com/example/idea/LeetCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/idea/Main.java" afterPath="$PROJECT_DIR$/src/com/example/idea/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -474,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510316988895</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="other exercise">
+      <created>1510501358841</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1510501358841</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -537,7 +542,8 @@
     <MESSAGE value="third" />
     <MESSAGE value="fourth" />
     <MESSAGE value="6" />
-    <option name="LAST_COMMIT_MESSAGE" value="6" />
+    <MESSAGE value="other exercise" />
+    <option name="LAST_COMMIT_MESSAGE" value="other exercise" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
