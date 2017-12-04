@@ -7,6 +7,47 @@ public class Main {
     public static void main(String[] args) {
 
 
+        /*
+        Scanner scan = new Scanner(System.in);
+        String x = scan.nextLine();
+        */
+
+
+        // ***********************************************************************************************************************
+        //  ************************************************** Stephen Grider *********************************************************
+        // ***********************************************************************************************************************
+        //  **********************************************************************************************************************
+        // Stephen Grider
+        SGrider exerciseSG = new SGrider();
+
+        // 3 - String Reversal
+        System.out.println("Reversing String - Grider");
+        String input1 = "pelotero";
+        System.out.printf("%s reverses to %s", input1, exerciseSG.reversingString(input1));
+
+
+        // 6 - MaxChars
+        System.out.println("MaxChars - SGrider" );
+
+
+        // 7 - FizzBuzz
+        System.out.println("FIZZ BUZZ - SGrider" );
+        exerciseSG.FizzBuzz();
+
+
+        // 8 - Array Chunking
+        System.out.println("Array Chunk - Grider");
+        int[] arr = { 1,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        int[][] result111 = exerciseSG.chunkArray(arr, 4);
+        System.out.println("Result");
+        for (int[] row : result111) {
+            for (int data : row){
+                System.out.printf("%d ", data);
+            }
+            System.out.println();
+        }
+
+
 
 
         // ***********************************************************************************************************************
@@ -88,8 +129,9 @@ public class Main {
         boolean res444 = exerciseLC.IsPalindromeNumber(num);
         System.out.printf("%d is palindrome? %b" , num, res444);
 
-        Scanner scan = new Scanner(System.in);
-        String x = scan.nextLine();
+
+
+
 
 
         // ***********************************************************************************************************************
