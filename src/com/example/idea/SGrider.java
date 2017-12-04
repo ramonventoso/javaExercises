@@ -47,4 +47,12 @@ public class SGrider {
         }
         return arr;
     }
+
+    public Boolean anagrams(String s1, String s2) {
+        Boolean[] map = new Boolean[256];
+        for (int i = 0; i < s1.length(); i++){
+            // if (map[s1.charAt(i)])
+        }
+        return true;
+    }
 }

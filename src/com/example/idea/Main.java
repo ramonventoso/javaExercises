@@ -38,7 +38,7 @@ public class Main {
         // 8 - Array Chunking
         System.out.println("Array Chunk - Grider");
         int[] arr = { 1,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-        int[][] result111 = exerciseSG.chunkArray(arr, 4);
+        int[][] result111 = exerciseSG.chunkArray(arr, 24);
         System.out.println("Result");
         for (int[] row : result111) {
             for (int data : row){
@@ -47,6 +47,10 @@ public class Main {
             System.out.println();
         }
 
+        // 9 - anagrams - do it again
+
+        Scanner scan = new Scanner(System.in);
+        String x = scan.nextLine();
 
 
 
