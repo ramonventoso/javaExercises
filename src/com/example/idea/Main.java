@@ -6,13 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-        /*
-        Scanner scan = new Scanner(System.in);
-        String x = scan.nextLine();
-        */
-
-
         // ***********************************************************************************************************************
         //  ************************************************** Stephen Grider *********************************************************
         // ***********************************************************************************************************************
@@ -48,9 +41,35 @@ public class Main {
         }
 
         // 9 - anagrams - do it again
+        System.out.println("SG -9 - anagrams");
+        String s1 = "c_oco!!drila";
+        String s2 = "dri@#$_lacOco";
+        System.out.printf("Are %s and %s anagrams ? : %b\n", s1, s2, exerciseSG.anagrams2(s1, s2));
 
+        // 10 - capitalize -
+        System.out.println("SG -10 - capitalize");
+        String s10 = "look, it is working!";
+        System.out.printf("%s turns into %s when capitalized\n", s10, exerciseSG.capitalize(s10));
+
+        // 11 - steps -
+        System.out.println("SG -11 - steps");
+        exerciseSG.steps(6);
+
+        // 11 - steps - recursively
+        System.out.println("\nSG -11 - steps recursively");
+        exerciseSG.stepsR(6, 6);
+
+        // 12 - pyramid
+        System.out.println("\nSG -11 -pyramid\n");
+        exerciseSG.pyramid(10, 19);
+
+        // 13 - vowels
+        System.out.println("\nSG -13 -vowels\n");
+        String str13 = "abracalabra pAta";
+        int vowels = exerciseSG.vowels(str13);
+        System.out.printf("\n%s contains %d vowels\n", str13, vowels);
         Scanner scan = new Scanner(System.in);
-        String x = scan.nextLine();
+        scan.nextLine();
 
 
 
@@ -102,7 +121,7 @@ public class Main {
 
         // PROBLEM 136 LC
         System.out.println("\nPROBLEM 136 LC");
-        HashMap<Integer, String> map = new HashMap();
+        HashMap<Integer, String> map = new HashMap<>();
         String res1 = exerciseLC.encode1("https://leetcode.com/problems/design-tinyurl", map);
         System.out.printf("encoded " + res1);
 
@@ -565,6 +584,26 @@ public class Main {
                 true, true};
          System.out.printf("Highest safe floor for the egg is %d", getBHighestFloor(pisos));
          */
+
+
+
+
+
+        // ************************************************************************************************************
+        // ************************************************************************************************************
+        //  ******************************************JAVA -------     TO LEARN ***************************************
+        // ************************************************************************************************************
+        //  ***********************************************************************************************************
+
+        // int result = Arrays.binarySearch(new int[] {20, 30, 40, 50}, 35);
+
+        /*
+        Scanner scan = new Scanner(System.in);
+        String x = scan.nextLine();
+        */
+
+        // -------------------------------------------------------------------------------------------------------------
+
 
     }
 
