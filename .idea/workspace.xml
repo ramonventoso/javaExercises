@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f35d751b-a148-49f0-973c-09e93fcaca6e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/idea/Main.java" afterPath="$PROJECT_DIR$/src/com/example/idea/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/idea/SGrider.java" afterPath="$PROJECT_DIR$/src/com/example/idea/SGrider.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,8 +77,8 @@
       <file leaf-file-name="SGrider.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+            <state relative-caret-position="496">
+              <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -607,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512412076506</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="sgrider 3">
+      <created>1512587546587</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1512587546587</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -674,7 +679,8 @@
     <MESSAGE value="int pal" />
     <MESSAGE value="sgrider 1" />
     <MESSAGE value="sgrider 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="sgrider 2" />
+    <MESSAGE value="sgrider 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="sgrider 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1415,8 +1421,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="130" column="5" selection-start-line="130" selection-start-column="5" selection-end-line="130" selection-end-column="5" />
+        <state relative-caret-position="496">
+          <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
           <folding />
         </state>
       </provider>
