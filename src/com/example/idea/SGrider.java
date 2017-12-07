@@ -130,4 +130,72 @@ public class SGrider {
         return orig - consonants;
     }
 
+    public void spiralMatrix(int n) {
+        int counter = 1;
+        int top = 0;
+        int bottom = n - 1;
+        int left = 0;
+        int right = n - 1;
+
+        int[][] arr = new int[n][n];
+        while (top <= bottom && left <= right) {
+            // fill top
+            for (int i = left; i <= right; i++) {
+                arr[top][i] = counter++;
+            }
+            // fill right
+            for (int i = top + 1; i <= bottom; i++) {
+                arr[i][right] = counter++;
+            }
+            // fill bottom
+            for (int i = right - 1; i >= left; i--) {
+                arr[bottom][i] = counter++;
+            }
+            // fill left
+            for (int i = bottom - 1; i > top; i--) {
+                arr[i][left] = counter++;
+            }
+            top++;
+            bottom--;
+
+            left++;
+            right--;
+        }
+        // output the array
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++){
+                System.out.printf("%d ", arr[i][j]);
+            }
+            System.out.printf("\n");
+        }
+    }
+
+    public int fibonacciI(int n){
+        int beforePrev = 0;
+        int previous = 1;
+        int iFib = 0; //
+        for (int i = 2; i <= n; i++) {
+            iFib = beforePrev + previous;
+            beforePrev = previous;
+            previous = iFib;
+        }
+        return iFib;
+    }
+
+    public int fibonacciR(int n){
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        return fibonacciR(n - 2) + fibonacciR(n - 1);
+    }
+
+    public int fibonacciRM(int n, int[] computedFib){
+        if (n == 0) return 0;
+
+        if (n == 1) computedFib[1] = 1;
+        if (computedFib[n] == 0) {
+            computedFib[n] = fibonacciRM(n - 2, computedFib) + fibonacciRM(n - 1, computedFib);
+        }
+        return computedFib[n];
+
+    }
 }

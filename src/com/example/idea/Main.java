@@ -13,6 +13,7 @@ public class Main {
         // Stephen Grider
         SGrider exerciseSG = new SGrider();
 
+
         // 3 - String Reversal
         System.out.println("Reversing String - Grider");
         String input1 = "pelotero";
@@ -68,10 +69,23 @@ public class Main {
         String str13 = "abracalabra pAta";
         int vowels = exerciseSG.vowels(str13);
         System.out.printf("\n%s contains %d vowels\n", str13, vowels);
+
+        // 14 - spiral matrix
+        System.out.println("\nSG -14 - spiral matrix\n");
+        exerciseSG.spiralMatrix(5);
+
+        // 16 - fibonacci -
+        int n16 = 45;
+        System.out.printf("\nMAX INT is %d", Integer.MAX_VALUE);
+        //System.out.printf("\nFibonacci of %d is %d", n16, exerciseSG.fibonacciI(n16));
+
+        // System.out.printf("\nFibonacci of %d is %d", n16, exerciseSG.fibonacciR(n16));
+
+        // memoization
+        int[] computedFib = new int[n16 + 1];
+        System.out.printf("\nFibonacci of %d is %d", n16, exerciseSG.fibonacciRM(n16, computedFib));
         Scanner scan = new Scanner(System.in);
         scan.nextLine();
-
-
 
         // ***********************************************************************************************************************
         //  ************************************************** Leet Code *********************************************************

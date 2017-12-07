@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f35d751b-a148-49f0-973c-09e93fcaca6e" name="Default" comment="" />
+    <list default="true" id="f35d751b-a148-49f0-973c-09e93fcaca6e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/idea/Main.java" afterPath="$PROJECT_DIR$/src/com/example/idea/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/example/idea/SGrider.java" afterPath="$PROJECT_DIR$/src/com/example/idea/SGrider.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,60 +27,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/idea/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/idea/LeetCode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="355" column="53" selection-start-line="355" selection-start-column="53" selection-end-line="355" selection-end-column="53" />
-              <folding>
-                <element signature="method#getIndices#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#addTwoNumbersBF#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#getNumber#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#addTwoNumbers#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#lengthOfLongestSubstringSlow#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#lengthOfLongestSubstring#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#singleNumber#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#singleNumber2#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#encode1#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#romanToInt#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#romanToInt2#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#longestPalindrome#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#IsPalindrome#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#longestPalindrome2#0;class#LeetCode#0" expanded="false" />
-                <element signature="docComment;method#IsPalindromeNumber#0;class#LeetCode#0" expanded="false" />
-                <element signature="method#IsPalindromeNumber#0;class#LeetCode#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Algo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/example/idea/Algo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#QuickSort#0;class#Algo#0" expanded="false" />
-                <element signature="method#QuickSortRepeated#0;class#Algo#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SGrider.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+            <state relative-caret-position="323">
+              <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
               <folding />
             </state>
           </provider>
@@ -115,6 +67,60 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LeetCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/idea/LeetCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="355" column="53" selection-start-line="355" selection-start-column="53" selection-end-line="355" selection-end-column="53" />
+              <folding>
+                <element signature="method#getIndices#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#addTwoNumbersBF#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#getNumber#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#addTwoNumbers#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#lengthOfLongestSubstringSlow#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#lengthOfLongestSubstring#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#reverse#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#singleNumber#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#singleNumber2#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#encode1#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#romanToInt#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#romanToInt2#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#longestPalindrome#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#longestPalindrome#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#IsPalindrome#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#longestPalindrome2#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#longestPalindrome2#0;class#LeetCode#0" expanded="false" />
+                <element signature="docComment;method#IsPalindromeNumber#0;class#LeetCode#0" expanded="false" />
+                <element signature="method#IsPalindromeNumber#0;class#LeetCode#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SGrider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="760">
+              <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Algo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/example/idea/Algo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#QuickSort#0;class#Algo#0" expanded="false" />
+                <element signature="method#QuickSortRepeated#0;class#Algo#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -142,16 +148,16 @@
         <option value="$PROJECT_DIR$/src/com/example/idea/Algo.java" />
         <option value="$PROJECT_DIR$/src/com/example/idea/Ctci.java" />
         <option value="$PROJECT_DIR$/src/com/example/idea/LeetCode.java" />
-        <option value="$PROJECT_DIR$/src/com/example/idea/Main.java" />
         <option value="$PROJECT_DIR$/src/com/example/idea/SGrider.java" />
+        <option value="$PROJECT_DIR$/src/com/example/idea/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="366" />
-    <option name="y" value="49" />
-    <option name="width" value="1245" />
-    <option name="height" value="826" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -617,7 +623,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512588662798</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="sgrider 4">
+      <created>1512588686737</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1512588686737</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -630,21 +643,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="366" y="49" width="1245" height="826" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32467532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31556195" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31123918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31493506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31060606" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36455697" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23027718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1340,6 +1353,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/java/lang/Boolean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/idea/Algo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1354,7 +1375,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/idea/LeetCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
+        <state relative-caret-position="1088">
           <caret line="355" column="53" selection-start-line="355" selection-start-column="53" selection-end-line="355" selection-end-column="53" />
           <folding>
             <element signature="method#getIndices#0;class#LeetCode#0" expanded="false" />
@@ -1369,8 +1390,10 @@
             <element signature="method#encode1#0;class#LeetCode#0" expanded="false" />
             <element signature="method#romanToInt#0;class#LeetCode#0" expanded="false" />
             <element signature="method#romanToInt2#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#longestPalindrome#0;class#LeetCode#0" expanded="false" />
             <element signature="method#longestPalindrome#0;class#LeetCode#0" expanded="false" />
             <element signature="method#IsPalindrome#0;class#LeetCode#0" expanded="false" />
+            <element signature="docComment;method#longestPalindrome2#0;class#LeetCode#0" expanded="false" />
             <element signature="method#longestPalindrome2#0;class#LeetCode#0" expanded="false" />
             <element signature="docComment;method#IsPalindromeNumber#0;class#LeetCode#0" expanded="false" />
             <element signature="method#IsPalindromeNumber#0;class#LeetCode#0" expanded="false" />
@@ -1409,26 +1432,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_73/jre/lib/rt.jar!/java/lang/Boolean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/idea/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+        <state relative-caret-position="323">
+          <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="129" column="32" selection-start-line="129" selection-start-column="32" selection-end-line="129" selection-end-column="32" />
+        <state relative-caret-position="760">
+          <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
           <folding />
         </state>
       </provider>
