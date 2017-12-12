@@ -4,7 +4,13 @@ package com.example.idea;
  * Created by rventoso on 30/11/2017.
  */
 public class SGrider {
+    private int n16;
+    private int[] computedFib;
 
+    public SGrider() {
+        this.n16 = 45;
+        this.computedFib = new int[n16 + 1];
+    }
     public void FizzBuzz() {
 
         for (int i = 1 ; i <= 100; i++){
@@ -188,14 +194,14 @@ public class SGrider {
         return fibonacciR(n - 2) + fibonacciR(n - 1);
     }
 
-    public int fibonacciRM(int n, int[] computedFib){
+    public int fibonacciRM(int n){
         if (n == 0) return 0;
+        if (n == 1) this.computedFib[1] = 1;
 
-        if (n == 1) computedFib[1] = 1;
-        if (computedFib[n] == 0) {
-            computedFib[n] = fibonacciRM(n - 2, computedFib) + fibonacciRM(n - 1, computedFib);
+        if (this.computedFib[n] == 0) {
+            this.computedFib[n] = fibonacciRM(n - 2) + fibonacciRM(n - 1);
         }
-        return computedFib[n];
+        return this.computedFib[n];
 
     }
 }

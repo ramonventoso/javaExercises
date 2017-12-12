@@ -82,8 +82,7 @@ public class Main {
         // System.out.printf("\nFibonacci of %d is %d", n16, exerciseSG.fibonacciR(n16));
 
         // memoization
-        int[] computedFib = new int[n16 + 1];
-        System.out.printf("\nFibonacci of %d is %d", n16, exerciseSG.fibonacciRM(n16, computedFib));
+        System.out.printf("\nFibonacci of %d is %d", n16, exerciseSG.fibonacciRM(n16));
         Scanner scan = new Scanner(System.in);
         scan.nextLine();
 

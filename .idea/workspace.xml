@@ -24,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/example/idea/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+            <state relative-caret-position="510">
+              <caret line="84" column="87" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
               <folding />
             </state>
           </provider>
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SGrider.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SGrider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
+            <state relative-caret-position="405">
+              <caret line="201" column="41" selection-start-line="201" selection-start-column="41" selection-end-line="201" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/com/example/idea/Algo.java" />
         <option value="$PROJECT_DIR$/src/com/example/idea/Ctci.java" />
         <option value="$PROJECT_DIR$/src/com/example/idea/LeetCode.java" />
-        <option value="$PROJECT_DIR$/src/com/example/idea/SGrider.java" />
         <option value="$PROJECT_DIR$/src/com/example/idea/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/example/idea/SGrider.java" />
       </list>
     </option>
   </component>
@@ -630,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512588686737</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="sg fib">
+      <created>1512678368456</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1512678368456</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -699,7 +706,8 @@
     <MESSAGE value="sgrider 2" />
     <MESSAGE value="sgrider 3" />
     <MESSAGE value="sgrider 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="sgrider 4" />
+    <MESSAGE value="sg fib" />
+    <option name="LAST_COMMIT_MESSAGE" value="sg fib" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1432,18 +1440,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/idea/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="85" column="73" selection-start-line="85" selection-start-column="73" selection-end-line="85" selection-end-column="73" />
+        <state relative-caret-position="405">
+          <caret line="201" column="41" selection-start-line="201" selection-start-column="41" selection-end-line="201" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/example/idea/SGrider.java">
+    <entry file="file://$PROJECT_DIR$/src/com/example/idea/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="199" column="5" selection-start-line="199" selection-start-column="5" selection-end-line="199" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="84" column="87" selection-start-line="84" selection-start-column="87" selection-end-line="84" selection-end-column="87" />
           <folding />
         </state>
       </provider>
