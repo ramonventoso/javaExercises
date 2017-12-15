@@ -204,4 +204,38 @@ public class SGrider {
         return this.computedFib[n];
 
     }
+    
+    public Node weave(Node q1, Node q2) {
+        
+        Node curr = null;
+        Node resultHead = null; 
+        if (q1 == null) return q2; 
+        if (q2 == null) return q1;
+        while( q1 != null && q2 != null) {
+            
+            //  first time
+            if (curr == null) {
+                curr = new Node(q1.data);
+                resultHead = curr;
+            }
+            else {
+                curr.next = new Node(q1.data);
+                curr = curr.next;
+            }
+            
+            curr.next = new Node(q2.data);
+            curr = curr.next;
+            q1 = q1.next;
+            q2 = q2.next;
+            
+        }
+        if (q1 == null) {
+            curr.next = q2;
+        }
+        else {
+            curr.next = q1;
+        }
+        
+        return resultHead; 
+    }
 }
