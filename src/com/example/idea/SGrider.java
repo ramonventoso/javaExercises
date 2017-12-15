@@ -204,8 +204,12 @@ public class SGrider {
         return this.computedFib[n];
 
     }
-    
+
+    /**
+     *  18 - weave two queues
+     */
     public Node weave(Node q1, Node q2) {
+
         
         Node curr = null;
         Node resultHead = null; 
@@ -237,5 +241,32 @@ public class SGrider {
         }
         
         return resultHead; 
+    }
+
+    /**
+     * 18 - helper method
+     */
+    public Node getQueueFromArray(int[] arr){
+        if (arr == null) return null;
+        Node result = new Node(arr[0]);
+        Node curr = result;
+        for (int i = 1; i < arr.length; i++) {
+            curr.next = new Node(arr[i]);
+            curr = curr.next;
+        }
+        return result;
+
+    }
+
+
+    /**
+     * 20 -
+     * @return
+     */
+    public Node queueFrom2Stacks(){
+
+
+
+        return new Node(0);
     }
 }

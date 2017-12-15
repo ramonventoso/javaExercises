@@ -83,6 +83,24 @@ public class Main {
 
         // memoization
         System.out.printf("\nFibonacci of %d is %d", n16, exerciseSG.fibonacciRM(n16));
+
+        // 18 - weave two queues
+        System.out.println("Weaving two queues");
+        Node queue1 = exerciseSG.getQueueFromArray(new int[] { 1, 3, 5, 7, 9});
+        Node queue2 = exerciseSG.getQueueFromArray(new int[] { 2, 4, 6, 8, 10, 11, 12, 13, 14});
+        Node weaved = exerciseSG.weave(queue1, queue2);
+        // showing the result
+        Node curr = weaved;
+        while (curr != null) {
+            System.out.printf("%d, ", curr.data);
+            curr = curr.next;
+        }
+        System.out.println();
+
+
+        // 20 - a Queue from two Stacks
+
+
         Scanner scan = new Scanner(System.in);
         scan.nextLine();
 
