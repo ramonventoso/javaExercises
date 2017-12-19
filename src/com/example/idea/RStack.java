@@ -8,12 +8,10 @@ public class RStack {
 
     public void push(int input) {
         Node newNode = new Node(input);
-        if (top == null) {
-            top = newNode;
+        if (top != null) {
+            newNode.next = top;
         }
-        else {
-            top.next = newNode;
-        }
+        top = newNode;
     }
 
     public int pop(){

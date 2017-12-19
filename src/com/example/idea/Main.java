@@ -99,7 +99,40 @@ public class Main {
 
 
         // 20 - a Queue from two Stacks
+        RTwoStackQueue q = new RTwoStackQueue();
+        q.enqueue(1);
+        q.enqueue(7);
+        q.enqueue(8);
+        q.enqueue(2);
+        q.enqueue(10);
+        q.enqueue(12);
+        q.enqueue(17);
 
+        System.out.println("Out first 5");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(q.dequeue());
+        }
+
+        System.out.println("In three more");
+        for (int i = 0; i < 3; i++) {
+            q.enqueue(i);
+            System.out.println(i);
+        }
+
+        System.out.println("Out 2 more");
+        for (int i = 0; i < 2; i++) {
+            System.out.println(q.dequeue());
+        }
+
+        System.out.println("Out 3 more");
+        for (int i = 0; i < 3; i++) {
+            System.out.println(q.dequeue());
+        }
+
+        System.out.println("Out 1 more");
+        for (int i = 0; i < 1; i++) {
+            System.out.println(q.dequeue());
+        }
 
         Scanner scan = new Scanner(System.in);
         scan.nextLine();
