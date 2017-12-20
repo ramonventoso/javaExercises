@@ -1,6 +1,7 @@
 package com.example.idea;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 /**
  * Created by rventoso on 04/11/2017.
@@ -373,4 +374,24 @@ public class LeetCode {
         }
         return true;
     }
+
+    /**
+     * Problem 206 - Accepted - Not tested in Main. Just coded directly in LC and submitted.
+     * @param head
+     * @return
+     */
+    public Node reverseList(Node head) {
+        if (head == null) return null;
+        Node c = new Node(head.data);
+        Node r = c;
+        while(head.next != null){
+            head = head.next;
+            c = new Node(head.data);
+            c.next = r;
+            r = c;
+        }
+
+        return r;
+    }
+
 }
